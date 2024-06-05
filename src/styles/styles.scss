@@ -1,0 +1,19 @@
+:root {
+  --border-radius-rounded: 1rem;
+  --border-radius-rounder: 2rem;
+  --border-radius-circle: 50rem;
+
+  --color-lightBlue-100: #d2dae2;
+  --color-gray-100: #ffffff7d;
+  --color-gray-400: gray;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//imports
+@import "./components/layout.scss";
+@import "./components/weather.scss";

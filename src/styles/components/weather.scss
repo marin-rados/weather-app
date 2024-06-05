@@ -1,0 +1,118 @@
+.weather {
+  background-color: var(--color-gray-100);
+  border-radius: var(--border-radius-rounded);
+  padding: 2rem;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 25rem;
+  &__search {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    &__input {
+      border: 1px solid var(--color-gray-400);
+      padding: 0.85rem;
+      border-radius: var(--border-radius-rounder);
+      text-align: center;
+      width: 80%;
+      background: transparent;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.button {
+  border: 1px solid var(--color-gray-400);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--border-radius-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #000000;
+  }
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0rem;
+  font-family: "Inter", sans-serif;
+  &__icon {
+    font-size: 8rem;
+    margin: 1rem 0rem;
+  }
+  &__name {
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  &__country {
+    margin: 0.5rem 0rem;
+  }
+  &__weather {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 1rem 0rem;
+  background-color: var(--color-lightBlue-100);
+  border-radius: var(--border-radius-rounded);
+  padding: 1rem;
+  &__card {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0rem;
+    }
+    &__icon {
+      font-size: 3rem;
+    }
+  }
+}
+
+.loading {
+  height: 25rem;
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  &__icon {
+    font-size: 3rem;
+    animation: spin 2s linear infinite;
+  }
+  &__text {
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
